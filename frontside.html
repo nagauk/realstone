@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RRR Frontside - DTCP Villa Plots on Mumbai Highway | Yugandhar RealStone</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="RRR Frontside, DTCP Villa Plots, Mumbai Highway, Sangareddy, Residential Plots" name="keywords">
+    <meta content="RRR Frontside by Yugandhar RealStone - DTCP approved villa plots on Mumbai Highway, Sangareddy offering countryside living with urban conveniences." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --accent-color: #ffc107;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #198754;
+        }
+        
+        .project-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/rrr-frontside-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .project-badge {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            z-index: 10;
+        }
+        
+        .badge-custom {
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 30px;
+            margin-left: 8px;
+        }
+        
+        .connectivity-badge {
+            background: linear-gradient(45deg, #ffc107, #fd7e14);
+            color: white;
+        }
+        
+        .highway-badge {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .location-map {
+            height: 400px;
+            background-color: var(--light-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .specs-table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .specs-table td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background-color: rgba(13, 110, 253, 0.05);
+        }
+        
+        .master-plan-img {
+            border: 3px solid var(--primary-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+        
+        .progress-bar {
+            border-radius: 5px;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(13, 110, 253, 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .color-section {
+            padding: 80px 0;
+            margin: 60px 0;
+            border-radius: 15px;
+        }
+        
+        .theme-highway {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+        }
+        
+        .theme-highway h2, .theme-highway h3, .theme-highway h4, .theme-highway h5 {
+            color: white;
+        }
+        
+        .sticky-sidebar {
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        @media (max-width: 991.98px) {
+            .project-hero {
+                height: 60vh;
+                background-attachment: scroll;
+            }
+            
+            .sticky-sidebar {
+                position: static;
+            }
+            
+            .floating-cta {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .project-hero {
+                height: 50vh;
+            }
+            
+            .project-badge {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .badge-custom {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>366, KPHB Phase1, Hyderabad, Telangana 500072</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 7989398156</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@realstone.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img class="w-100" src="img/logo-dark-1-2.png" alt="Yugandhar RealStone Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="projects.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="projects.html#ongoing" class="dropdown-item">OnGoing Projects</a>
+                            <a href="projects.html#upcoming" class="dropdown-item">UpComming Projects</a>
+                            <a href="projects.html#completed" class="dropdown-item">Completed Projects</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Locations</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Mumbai Highway</a>
+                            <a href="feature.html" class="dropdown-item">Srisailam Highway</a>
+                            <a href="team.html" class="dropdown-item">Vijayawada</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                </div>
+        
+                <a href="contact.html" class="btn btn-primary py-2 px-4 ms-3">Contact Now</a>
+            </div>
+        </nav>
+
+        <!-- Project Hero Section -->
+        <div class="container-fluid project-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">RRR - FrontSide</h1>
+                        <p class="text-white fs-4 mb-4 animated slideInDown">DTCP Villa Plots @ Mumbai Highway, Sangareddy</p>
+                        <div class="d-flex flex-wrap text-white mb-4">
+                            <div class="me-4 mb-2">
+                                <i class="fa fa-map-marker-alt me-2"></i> Mumbai Highway, Sangareddy
+                            </div>
+                            <div class="me-4 mb-2">
+                                <i class="fa fa-home me-2"></i> DTCP Villa Plots
+                            </div>
+                            <div class="mb-2">
+                                <i class="fa fa-tag me-2"></i> Starting at ₹ 22 Lakhs
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <a href="#contact-form" class="btn btn-primary btn-lg py-3 px-5 me-3 mb-3 animated slideInLeft">Book Now</a>
+                            <a href="#gallery" class="btn btn-outline-light btn-lg py-3 px-5 mb-3 animated slideInRight">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Floating CTA Button for Mobile -->
+    <div class="floating-cta">
+        <a href="#contact-form" class="btn btn-primary btn-lg shadow-lg">
+            <i class="fa fa-phone me-2"></i> Enquire Now
+        </a>
+    </div>
+
+    <!-- Project Details Section -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Overview Section -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Project Overview</h2>
+                        <p class="mb-4 fs-5">RRR Frontside is an exclusive DTCP approved villa plot project strategically located on the Mumbai Highway in Sangareddy. This premium residential development offers the perfect escape from city noise while keeping you connected to urban conveniences.</p>
+                        <p class="mb-4">With the upcoming Regional Ring Road, RRR Frontside presents an unparalleled opportunity to enjoy the serenity of countryside living in your dream home, with city resources easily accessible. The project is designed for those who value peace and tranquility without compromising on modern amenities and connectivity.</p>
+                        <p class="mb-0">Every aspect of RRR Frontside has been carefully planned to create a harmonious living environment that blends natural beauty with modern infrastructure. From wide roads to landscaped common areas, the project offers a premium lifestyle experience that caters to families looking for a balanced living environment away from urban congestion.</p>
+                    </div>
+
+                    <!-- Connectivity Advantages -->
+                    <div class="color-section theme-highway">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-3">Connectivity Advantages</h2>
+                                <p class="mb-0 fs-5">Strategic location with excellent transportation links</p>
+                            </div>
+                            <div class="row g-4 text-primary">
+                                <div class="col-md-6">
+                                    <div class="bg-white bg-opacity-10 p-4 rounded h-100">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-road text-primary fa-lg"></i>
+                                            </div>
+                                            <h5 class="mb-0 text-primary">Mumbai Highway</h5>
+                                        </div>
+                                        <p class="mb-0">Prime location on Mumbai Highway with direct connectivity to Hyderabad and major commercial centers. Easy access to the city while enjoying peaceful surroundings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white bg-opacity-10 p-4 rounded h-100">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-exchange-alt text-primary fa-lg"></i>
+                                            </div>
+                                            <h5 class="mb-0 text-primary">Regional Ring Road</h5>
+                                        </div>
+                                        <p class="mb-0">Upcoming Regional Ring Road will significantly reduce travel time to Hyderabad and other key locations, enhancing property value and connectivity.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white bg-opacity-10 p-4 rounded h-100">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-bus text-primary fa-lg"></i>
+                                            </div>
+                                            <h5 class="mb-0 text-primary">Public Transport</h5>
+                                        </div>
+                                        <p class="mb-0">Excellent public transport connectivity with regular bus services to Hyderabad and surrounding areas. Multiple transportation options available.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white bg-opacity-10 p-4 rounded h-100">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-plane text-primary fa-lg"></i>
+                                            </div>
+                                            <h5 class="mb-0 text-primary">Airport Access</h5>
+                                        </div>
+                                        <p class="mb-0">Easy access to Rajiv Gandhi International Airport via Mumbai Highway and upcoming infrastructure. Convenient for frequent travelers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Master Plan -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Master Plan</h2>
+                        <div class="text-center mb-4">
+                            <img src="img/rrr-frontside-masterplan.jpg" class="img-fluid master-plan-img" alt="RRR Frontside Master Plan">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Layout Highlights</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 22-acre meticulously planned residential layout</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 60-feet wide main entrance from Mumbai Highway</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 40-feet and 30-feet wide internal roads</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Dedicated commercial zone for convenience stores</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Central park with children's play area</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Clubhouse and community center</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Jogging tracks and green spaces</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Land Distribution</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fa fa-home text-primary me-2"></i> Residential villa plots: 18 acres</li>
+                                    <li class="mb-2"><i class="fa fa-tree text-success me-2"></i> Parks and green spaces: 2 acres</li>
+                                    <li class="mb-2"><i class="fa fa-store text-warning me-2"></i> Commercial area: 0.5 acres</li>
+                                    <li class="mb-2"><i class="fa fa-building text-info me-2"></i> Clubhouse and amenities: 0.5 acres</li>
+                                    <li class="mb-2"><i class="fa fa-road text-secondary me-2"></i> Roads and infrastructure: 1 acre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Key Features</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>DTCP Approved</h5>
+                                        <p class="mb-0">All plots come with DTCP approval for complete peace of mind and legal security.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Prime Highway Location</h5>
+                                        <p class="mb-0">Strategic location on Mumbai Highway with excellent connectivity to Hyderabad and beyond.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Serene Environment</h5>
+                                        <p class="mb-0">Peaceful countryside living away from city noise and pollution, perfect for families.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Wide CC Roads</h5>
+                                        <p class="mb-0">40-feet and 30-feet wide internal concrete roads for easy access and navigation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Bank Loan Facilities</h5>
+                                        <p class="mb-0">Easy financing options from leading nationalized banks with attractive interest rates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Spot Registration</h5>
+                                        <p class="mb-0">Hassle-free documentation and registration process with complete transparency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Project Specifications</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered specs-table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Project Name</strong></td>
+                                        <td>RRR - FrontSide</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Location</strong></td>
+                                        <td>Mumbai Highway, Sangareddy</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Project Type</strong></td>
+                                        <td>DTCP Approved Residential Villa Plots</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Total Area</strong></td>
+                                        <td>22 Acres</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Approvals</strong></td>
+                                        <td>DTCP, RERA Approved</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Plot Sizes</strong></td>
+                                        <td>200 sq.yd, 300 sq.yd, 400 sq.yd, 500 sq.yd</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Price Range</strong></td>
+                                        <td>₹ 22 Lakhs - ₹ 55 Lakhs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Registration</strong></td>
+                                        <td>Spot Registration Available</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Loan Facility</strong></td>
+                                        <td>Available from Leading Banks (SBI, HDFC, ICICI)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Development Status</strong></td>
+                                        <td>Ongoing - Phase 1 Plots Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Amenities</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">24/7 Security with CCTV</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Landscaped Central Park</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Children's Play Area</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Jogging Tracks</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Clubhouse</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Underground Electrification</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Water Supply System</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Underground Drainage</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Street Lighting</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Rainwater Harvesting</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Compound Wall</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Main Entrance Gate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Advantages -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Location Advantages</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Prime location on Mumbai Highway with direct connectivity to Hyderabad and major commercial centers</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Just 30 km from Hyderabad city center with easy access via multiple routes</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Close to upcoming IT and industrial corridors with excellent employment opportunities</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Easy access to educational institutions, hospitals, and healthcare facilities</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Well-connected by public transport with regular bus services to key locations</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Proximity to shopping malls, commercial centers, and entertainment zones</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Peaceful and pollution-free environment away from city congestion</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Future growth potential with ongoing infrastructure development in the region</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Ideal for both residential purposes and long-term investment appreciation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Construction Progress -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Construction Progress</h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <i class="fa fa-check text-white fa-2x"></i>
+                                    </div>
+                                    <h5>Phase 1</h5>
+                                    <p class="mb-3">Land development completed<br>Plot marking in progress<br>60% plots booked</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" style="width: 100%">100%</div>
+                                    </div>
+                                    <small class="text-muted">Completed</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <i class="fa fa-tasks text-white fa-2x"></i>
+                                    </div>
+                                    <h5>Phase 2</h5>
+                                    <p class="mb-3">Road work in progress<br>Electrical work started<br>40% plots available</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+                                    </div>
+                                    <small class="text-muted">In Progress</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <i class="fa fa-clock text-white fa-2x"></i>
+                                    </div>
+                                    <h5>Phase 3</h5>
+                                    <p class="mb-3">Planning stage<br>Pre-booking open<br>Infrastructure development</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-info" style="width: 30%">30%</div>
+                                    </div>
+                                    <small class="text-muted">Planning</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Plans -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Payment Plans</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary mb-3">Standard Plan</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Booking Amount</span>
+                                            <span class="fw-bold">10%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 45 days</span>
+                                            <span class="fw-bold">40%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 90 days</span>
+                                            <span class="fw-bold">30%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>On Possession</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mt-3 pt-2 border-top">
+                                            <strong class="text-success">No Hidden Charges</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary mb-3">Construction Linked</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Booking Amount</span>
+                                            <span class="fw-bold">10%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Foundation Level</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Plinth Level</span>
+                                            <span class="fw-bold">30%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Superstructure</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>On Possession</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mt-3 pt-2 border-top">
+                                            <strong class="text-success">Flexible Payment Options</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-light rounded">
+                            <p class="mb-0"><strong>Note:</strong> Special discounts available for early investors and bulk bookings. Bank loan assistance provided for all approved applicants. EMI options available for selected payment plans.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Is RRR Frontside DTCP approved?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, RRR Frontside is fully DTCP approved with all necessary government clearances. All plots come with proper approvals and clear titles, ensuring complete legal security for investors and homeowners.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        What is the current development status?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Phase 1 development is complete with plot marking and basic infrastructure. Phase 2 infrastructure work including roads and electrical lines is 70% complete. Phase 3 is in planning stage with pre-booking available at special rates.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Are bank loans available for this project?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we have tie-ups with leading banks including SBI, HDFC, and ICICI for home loans and plot loans. Our team will assist you with the loan application process and documentation to ensure a smooth experience.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        What is the timeline for possession?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Phase 1 plots are ready for possession. Phase 2 possession is expected within 6 months, and Phase 3 within 12 months from the date of booking. We provide regular updates on construction progress to all our customers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        What amenities will be provided?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The project includes 24/7 security with CCTV surveillance, landscaped parks, children's play areas, jogging tracks, underground electrification, water supply system, drainage system, street lighting, rainwater harvesting, and compound wall with main gate among other premium amenities.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Section -->
+                    <div id="gallery" class="mb-5">
+                        <h2 class="mb-4 section-title">Project Gallery</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="gallery-item">
+                                    <img src="img/rrr-frontside-1.jpg" class="img-fluid" alt="RRR Frontside Entrance">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="gallery-item">
+                                    <img src="img/rrr-frontside-2.jpg" class="img-fluid" alt="RRR Frontside Layout">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rrr-frontside-3.jpg" class="img-fluid" alt="RRR Frontside Roads">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rrr-frontside-4.jpg" class="img-fluid" alt="RRR Frontside Park">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rrr-frontside-5.jpg" class="img-fluid" alt="RRR Frontside View">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Map -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Location Map</h2>
+                        <div class="location-map">
+                            <div class="text-center p-4">
+                                <i class="fa fa-map-marker-alt text-primary fa-3x mb-3"></i>
+                                <h4>RRR Frontside Location</h4>
+                                <p class="mb-3">Mumbai Highway, Sangareddy</p>
+                                <a href="#" class="btn btn-primary mt-2">View on Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sticky-sidebar">
+                        <!-- Enquiry Form -->
+                        <div class="bg-light rounded p-5 mb-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Enquire About RRR Frontside</h4>
+                            <form id="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-control form-control-lg">
+                                            <option value="">Interested Plot Size</option>
+                                            <option value="200">200 sq.yd</option>
+                                            <option value="300">300 sq.yd</option>
+                                            <option value="400">400 sq.yd</option>
+                                            <option value="500">500 sq.yd</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3 fs-5" type="submit">Book Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Project Highlights -->
+                        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Project Highlights</h4>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-road text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Highway Location</h6>
+                                    <p class="mb-0">Prime location on Mumbai Highway</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-home text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">DTCP Approved</h6>
+                                    <p class="mb-0">Government approved for complete security</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-tag text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Best Price</h6>
+                                    <p class="mb-0">Competitive pricing with flexible plans</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-map text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Serene Environment</h6>
+                                    <p class="mb-0">Peaceful countryside living</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="bg-primary rounded p-5 mt-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="text-white mb-4 text-center">Contact for Site Visit</h4>
+                            <p class="text-white mb-4 text-center">Schedule a site visit with our sales team for detailed information and plot selection</p>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Call Us</h5>
+                                    <p class="mb-0">+91 7989398156</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Email Us</h5>
+                                    <p class="mb-0">info@realstone.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center text-white">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Visit Office</h5>
+                                    <p class="mb-0">366, KPHB Phase1, Hyderabad</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download Brochure -->
+                        <div class="bg-light rounded p-5 mt-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Download Brochure</h4>
+                            <p class="mb-4 text-center">Get detailed project information, master plan, and pricing in our comprehensive brochure.</p>
+                            <a href="#" class="btn btn-primary w-100 py-3">
+                                <i class="fa fa-download me-2"></i> Download Brochure
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold text-primary text-uppercase">Other Projects</h5>
+                    <h1 class="mb-0">You Might Also Like</h1>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/rs.png" alt="RRR Riverside">
+                            <div class="project-badge">
+                                <span class="badge bg-warning">Upcoming</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">RRR Riverside</h4>
+                            <p class="text-muted">FARM LANDS @ MUMBAI HIGHWAY</p>
+                            <a class="btn btn-primary py-2 px-4" href="rrr-riverside.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/sp.png" alt="Signature Park">
+                            <div class="project-badge">
+                                <span class="badge bg-warning">Upcoming</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">Signature Park</h4>
+                            <p class="text-muted">POLLUTION-FREE HEAVEN @ VIJAYAWADA</p>
+                            <a class="btn btn-primary py-2 px-4" href="signature-park.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/gh.png" alt="Green Heights">
+                            <div class="project-badge">
+                                <span class="badge bg-primary">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">Green Heights</h4>
+                            <p class="text-muted">DTCP VILLA PLOTS @ SADASHIVPET</p>
+                            <a class="btn btn-primary py-2 px-4" href="green-heights.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-building me-2"></i>RealStone</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Yugandhar RealStone - Your trusted partner for premium real estate investments. Building dreams with trust and transparency since 2005.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">366, KPHB Phase1, Hyderabad, Telangana 500072</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@realstone.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+91 7989398156</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="projects.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Projects</a>
+                                <a class="text-light mb-2" href="projects.html#ongoing"><i class="bi bi-arrow-right text-primary me-2"></i>Ongoing Projects</a>
+                                <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Our Projects</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="green-heights.html"><i class="bi bi-arrow-right text-primary me-2"></i>Green Heights</a>
+                                <a class="text-light mb-2" href="royal-heights.html"><i class="bi bi-arrow-right text-primary me-2"></i>Royal Heights</a>
+                                <a class="text-light mb-2" href="rrr-riverside.html"><i class="bi bi-arrow-right text-primary me-2"></i>RRR Riverside</a>
+                                <a class="text-light mb-2" href="rrr-frontside.html"><i class="bi bi-arrow-right text-primary me-2"></i>RRR Frontside</a>
+                                <a class="text-light mb-2" href="signature-park.html"><i class="bi bi-arrow-right text-primary me-2"></i>Signature Park</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Yugandhar RealStone</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     <!-- WhatsApp Contact Button with Tooltip -->
+    <a href="https://wa.me/917989398156" class="btn btn-lg btn-success btn-lg-square rounded whatsapp-contact pulse" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Custom Script for RRR Frontside Page -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Sticky sidebar functionality
+        window.addEventListener('scroll', function() {
+            const sidebar = document.querySelector('.sticky-sidebar');
+            const footer = document.querySelector('footer');
+            const sidebarRect = sidebar.getBoundingClientRect();
+            const footerRect = footer.getBoundingClientRect();
+            
+            if (footerRect.top < window.innerHeight + sidebarRect.height) {
+                sidebar.style.position = 'absolute';
+                sidebar.style.top = 'auto';
+                sidebar.style.bottom = '0';
+            } else if (window.pageYOffset > 300) {
+                sidebar.style.position = 'fixed';
+                sidebar.style.top = '100px';
+                sidebar.style.bottom = 'auto';
+            } else {
+                sidebar.style.position = 'static';
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your enquiry! We will contact you shortly.');
+            this.reset();
+        });
+
+        // Initialize animations
+        new WOW().init();
+    </script>
+</body>
+
+</html>

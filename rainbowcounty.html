@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rainbow County - Vibrant Living Experience | Yugandhar RealStone</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rainbow County, Residential Plots, Colorful Living, Premium Housing, Family Community" name="keywords">
+    <meta content="Rainbow County by Yugandhar RealStone - Experience vibrant living in our premium residential plots with colorful landscapes and modern amenities." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #6f42c1;
+            --secondary-color: #e83e8c;
+            --accent-color: #20c997;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --rainbow-red: #ff6b6b;
+            --rainbow-orange: #fd7e14;
+            --rainbow-yellow: #ffc107;
+            --rainbow-green: #20c997;
+            --rainbow-blue: #0dcaf0;
+            --rainbow-indigo: #6610f2;
+            --rainbow-violet: #6f42c1;
+        }
+        
+        .project-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/rainbow-county-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, 
+                var(--rainbow-red) 0%, 
+                var(--rainbow-orange) 16.66%, 
+                var(--rainbow-yellow) 33.33%, 
+                var(--rainbow-green) 50%, 
+                var(--rainbow-blue) 66.66%, 
+                var(--rainbow-indigo) 83.33%, 
+                var(--rainbow-violet) 100%);
+            z-index: 1;
+        }
+        
+        .project-badge {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            z-index: 10;
+        }
+        
+        .badge-custom {
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 30px;
+            margin-left: 8px;
+        }
+        
+        .rainbow-badge {
+            background: linear-gradient(45deg, var(--rainbow-red), var(--rainbow-violet));
+            color: white;
+        }
+        
+        .family-badge {
+            background: linear-gradient(45deg, var(--rainbow-green), var(--rainbow-blue));
+            color: white;
+        }
+        
+        .vibrant-badge {
+            background: linear-gradient(45deg, var(--rainbow-orange), var(--rainbow-yellow));
+            color: white;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .location-map {
+            height: 400px;
+            background-color: var(--light-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .specs-table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .specs-table td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background-color: rgba(111, 66, 193, 0.05);
+        }
+        
+        .master-plan-img {
+            border: 3px solid var(--primary-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+        
+        .progress-bar {
+            border-radius: 5px;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(111, 66, 193, 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                var(--rainbow-red) 0%, 
+                var(--rainbow-orange) 16.66%, 
+                var(--rainbow-yellow) 33.33%, 
+                var(--rainbow-green) 50%, 
+                var(--rainbow-blue) 66.66%, 
+                var(--rainbow-indigo) 83.33%, 
+                var(--rainbow-violet) 100%);
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .color-section {
+            padding: 80px 0;
+            margin: 60px 0;
+            border-radius: 15px;
+        }
+        
+        .theme-rainbow {
+            background: linear-gradient(135deg, rgba(255,107,107,0.9), rgba(111,66,193,0.9)), url('img/colorful-bg.jpg');
+            background-size: cover;
+            color: white;
+        }
+        
+        .theme-rainbow h2, .theme-rainbow h3, .theme-rainbow h4, .theme-rainbow h5 {
+            color: white;
+        }
+        
+        .sticky-sidebar {
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .color-zone {
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        .color-zone:hover {
+            transform: translateY(-5px);
+        }
+        
+        .zone-red {
+            background: linear-gradient(135deg, var(--rainbow-red), #ff8e8e);
+        }
+        
+        .zone-orange {
+            background: linear-gradient(135deg, var(--rainbow-orange), #fd9843);
+        }
+        
+        .zone-yellow {
+            background: linear-gradient(135deg, var(--rainbow-yellow), #ffd54f);
+        }
+        
+        .zone-green {
+            background: linear-gradient(135deg, var(--rainbow-green), #51e6b7);
+        }
+        
+        .zone-blue {
+            background: linear-gradient(135deg, var(--rainbow-blue), #5edfff);
+        }
+        
+        .zone-indigo {
+            background: linear-gradient(135deg, var(--rainbow-indigo), #8a63d2);
+        }
+        
+        .zone-violet {
+            background: linear-gradient(135deg, var(--rainbow-violet), #8f6cd1);
+        }
+        
+        .btn-rainbow {
+            background: linear-gradient(90deg, 
+                var(--rainbow-red) 0%, 
+                var(--rainbow-orange) 16.66%, 
+                var(--rainbow-yellow) 33.33%, 
+                var(--rainbow-green) 50%, 
+                var(--rainbow-blue) 66.66%, 
+                var(--rainbow-indigo) 83.33%, 
+                var(--rainbow-violet) 100%);
+            border: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-rainbow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            color: white;
+        }
+        
+        @media (max-width: 991.98px) {
+            .project-hero {
+                height: 60vh;
+                background-attachment: scroll;
+            }
+            
+            .sticky-sidebar {
+                position: static;
+            }
+            
+            .floating-cta {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .project-hero {
+                height: 50vh;
+            }
+            
+            .project-badge {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .badge-custom {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>366, KPHB Phase1, Hyderabad, Telangana 500072</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 7989398156</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@realstone.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img class="w-100" src="img/logo-dark-1-2.png" alt="Yugandhar RealStone Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="projects.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="projects.html#ongoing" class="dropdown-item">OnGoing Projects</a>
+                            <a href="projects.html#upcoming" class="dropdown-item">UpComming Projects</a>
+                            <a href="projects.html#completed" class="dropdown-item">Completed Projects</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Locations</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Mumbai Highway</a>
+                            <a href="feature.html" class="dropdown-item">Srisailam Highway</a>
+                            <a href="team.html" class="dropdown-item">Vijayawada</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                </div>
+        
+                <a href="contact.html" class="btn btn-rainbow py-2 px-4 ms-3">Contact Now</a>
+            </div>
+        </nav>
+
+        <!-- Project Hero Section -->
+        <div class="container-fluid project-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Rainbow County</h1>
+                        <p class="text-white fs-4 mb-4 animated slideInDown">A Vibrant Living Experience in Harmony with Nature</p>
+                        <div class="d-flex flex-wrap text-white mb-4">
+                            <div class="me-4 mb-2">
+                                <i class="fa fa-map-marker-alt me-2"></i> Srisailam Highway, Hyderabad
+                            </div>
+                            <div class="me-4 mb-2">
+                                <i class="fa fa-home me-2"></i> Premium Residential Plots
+                            </div>
+                            <div class="mb-2">
+                                <i class="fa fa-tag me-2"></i> Starting at ₹ 25 Lakhs
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <a href="#contact-form" class="btn btn-rainbow btn-lg py-3 px-5 me-3 mb-3 animated slideInLeft">Pre-Book Now</a>
+                            <a href="#gallery" class="btn btn-outline-light btn-lg py-3 px-5 mb-3 animated slideInRight">View Concept</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Floating CTA Button for Mobile -->
+    <div class="floating-cta">
+        <a href="#contact-form" class="btn btn-rainbow btn-lg shadow-lg">
+            <i class="fa fa-phone me-2"></i> Enquire Now
+        </a>
+    </div>
+
+    <!-- Project Details Section -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Overview Section -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Project Overview</h2>
+                        <p class="mb-4 fs-5">Rainbow County is an innovative residential plotted development that brings a vibrant and colorful living experience to the serene Srisailam Highway corridor. This unique project is designed to create a harmonious blend of nature's beauty and modern living, with each zone featuring themed gardens and landscapes inspired by the colors of the rainbow.</p>
+                        <p class="mb-4">Spread across 35 acres of meticulously planned landscape, Rainbow County offers a living experience unlike any other. Each residential zone is color-themed with corresponding flowering plants, creating a visually stunning environment that changes with the seasons while providing a serene and uplifting atmosphere for residents.</p>
+                        <p class="mb-0">Our vision for Rainbow County is to create not just plots, but a complete lifestyle community where families can thrive amidst nature's vibrant palette. With premium amenities, eco-friendly practices, and thoughtful planning, this project represents the future of residential living where color, nature, and community come together in perfect harmony.</p>
+                    </div>
+
+                    <!-- Color-Themed Zones -->
+                    <div class="color-section theme-rainbow">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-3">The Color-Themed Zones</h2>
+                                <p class="mb-0 fs-5">Experience living in a rainbow with seven distinct color zones</p>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-red">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-rose text-danger fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Red Rose Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Featuring vibrant red flowering plants including roses, hibiscus, and bougainvillea. Perfect for those who love passion and energy in their surroundings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-orange">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-sun text-warning fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Orange Blossom Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Beautiful orange marigolds, lilies, and trumpet vines creating a warm and welcoming atmosphere that energizes your day.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-yellow">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-sun text-warning fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Yellow Sunshine Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Sunflowers, yellow roses, and golden trumpet trees bringing sunshine to your day with their cheerful and bright appearance.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-green">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-leaf text-success fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Green Harmony Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Lush green lawns, ferns, and evergreen plants creating a peaceful and rejuvenating environment for relaxation and meditation.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-blue">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-tint text-primary fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Blue Sky Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Blue hydrangeas, morning glories, and plumbago creating a cool, serene ambiance that calms the mind and soothes the soul.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="color-zone zone-indigo">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-moon text-indigo fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Indigo Twilight Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Indigo flowers, lavender, and jacaranda trees for a mystical evening atmosphere that inspires creativity and contemplation.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="color-zone zone-violet text-center">
+                                        <div class="d-flex align-items-center justify-content-center mb-3">
+                                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                                <i class="fa fa-star text-purple fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">Violet Dream Zone</h4>
+                                        </div>
+                                        <p class="mb-0">Violet orchids, lilacs, and wisteria creating a royal and luxurious ambiance that sparks imagination and dreams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Master Plan -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Master Plan</h2>
+                        <div class="text-center mb-4">
+                            <img src="img/rainbow-county-masterplan.jpg" class="img-fluid master-plan-img" alt="Rainbow County Master Plan">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Layout Highlights</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 35-acre meticulously planned colorful layout</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 7 distinct color-themed residential zones</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 70-feet wide rainbow-themed main entrance</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> 40-feet and 30-feet wide internal roads</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Central rainbow park with water features</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Color-coordinated clubhouse and amenities</li>
+                                    <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Dedicated children's play areas in each zone</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Land Distribution</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fa fa-home text-primary me-2"></i> Residential plots: 25 acres</li>
+                                    <li class="mb-2"><i class="fa fa-tree text-success me-2"></i> Themed gardens and parks: 6 acres</li>
+                                    <li class="mb-2"><i class="fa fa-building text-info me-2"></i> Clubhouse and amenities: 1.5 acres</li>
+                                    <li class="mb-2"><i class="fa fa-store text-warning me-2"></i> Commercial area: 0.5 acres</li>
+                                    <li class="mb-2"><i class="fa fa-tint text-primary me-2"></i> Water bodies and features: 1 acre</li>
+                                    <li class="mb-2"><i class="fa fa-road text-secondary me-2"></i> Roads and infrastructure: 1 acre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Key Features</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Color-Themed Living</h5>
+                                        <p class="mb-0">Seven distinct color zones with corresponding landscapes and themed gardens for a unique living experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>RERA Approved</h5>
+                                        <p class="mb-0">All plots come with RERA approval for complete peace of mind and legal security for your investment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Eco-Friendly Design</h5>
+                                        <p class="mb-0">Sustainable development with rainwater harvesting, solar power, and waste management systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Premium Amenities</h5>
+                                        <p class="mb-0">Clubhouse, swimming pool, jogging tracks, and multiple recreational facilities for all age groups.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Family-Centric Design</h5>
+                                        <p class="mb-0">Designed with families in mind, featuring multiple play areas, parks, and community spaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="feature-icon bg-primary text-white">
+                                        <i class="fa fa-check fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5>24/7 Security</h5>
+                                        <p class="mb-0">Gated community with CCTV surveillance, security personnel, and access control systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Project Specifications</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered specs-table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Project Name</strong></td>
+                                        <td>Rainbow County</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Location</strong></td>
+                                        <td>Srisailam Highway, Hyderabad</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Project Type</strong></td>
+                                        <td>Premium Color-Themed Residential Plots</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Total Area</strong></td>
+                                        <td>35 Acres</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Approvals</strong></td>
+                                        <td>RERA, HMDA Approved</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Plot Sizes</strong></td>
+                                        <td>200 sq.yd, 300 sq.yd, 400 sq.yd, 500 sq.yd</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Price Range</strong></td>
+                                        <td>₹ 25 Lakhs - ₹ 60 Lakhs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Registration</strong></td>
+                                        <td>Spot Registration Available</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Loan Facility</strong></td>
+                                        <td>Available from Leading Banks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Development Status</strong></td>
+                                        <td>New Launch - Pre-booking Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Amenities</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Color-Themed Clubhouse</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Swimming Pool</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Central Rainbow Park</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Jogging & Cycling Tracks</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Children's Play Areas</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Meditation & Yoga Zones</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">24/7 Security with CCTV</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Underground Electrification</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Water Supply System</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Rainwater Harvesting</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Solar Street Lighting</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check text-primary me-3 fa-lg"></i>
+                                    <span class="fs-5">Landscaped Gardens</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Advantages -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Location Advantages</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Prime location on Srisailam Highway with excellent connectivity to Hyderabad and major commercial centers</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Just 20 km from Hyderabad city center with easy access via multiple routes and public transport</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Close to upcoming IT and commercial hubs with excellent employment and business opportunities</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Easy access to reputed educational institutions, hospitals, and healthcare facilities</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Well-connected by public transport with regular bus services to key locations in Hyderabad</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Proximity to shopping malls, commercial centers, and entertainment zones for convenience</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Peaceful and pollution-free environment away from city congestion and noise pollution</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Future growth potential with ongoing infrastructure development and urban expansion</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2 fa-lg"></i> Ideal for families seeking vibrant community living with modern amenities and natural surroundings</li>
+                        </ul>
+                    </div>
+
+                    <!-- Investment Potential -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Investment Potential</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary">Unique Concept</h5>
+                                    <ul>
+                                        <li>First-of-its-kind color-themed residential project in the region</li>
+                                        <li>High demand for unique and themed living experiences</li>
+                                        <li>Limited availability of such innovative projects in prime locations</li>
+                                        <li>Growing trend towards themed communities and experiential living</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary">Location Advantage</h5>
+                                    <ul>
+                                        <li>Strategic location on developing Srisailam Highway corridor</li>
+                                        <li>Infrastructure development and urban expansion in the region</li>
+                                        <li>Proximity to commercial and IT hubs driving property values</li>
+                                        <li>Limited land availability in prime areas ensuring appreciation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Plans -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Pre-Booking Plans</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary mb-3">Founder's Plan</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Pre-booking Amount</span>
+                                            <span class="fw-bold">5%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 30 days</span>
+                                            <span class="fw-bold">15%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 90 days</span>
+                                            <span class="fw-bold">25%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 6 months</span>
+                                            <span class="fw-bold">25%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>On Possession</span>
+                                            <span class="fw-bold">30%</span>
+                                        </li>
+                                        <li class="mt-3 pt-2 border-top">
+                                            <strong class="text-success">Special Discount: 7%</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded h-100">
+                                    <h5 class="text-primary mb-3">Early Bird Plan</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Booking Amount</span>
+                                            <span class="fw-bold">10%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 45 days</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 90 days</span>
+                                            <span class="fw-bold">25%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>Within 6 months</span>
+                                            <span class="fw-bold">25%</span>
+                                        </li>
+                                        <li class="mb-2 d-flex justify-content-between">
+                                            <span>On Possession</span>
+                                            <span class="fw-bold">20%</span>
+                                        </li>
+                                        <li class="mt-3 pt-2 border-top">
+                                            <strong class="text-success">Special Discount: 5%</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-light rounded">
+                            <p class="mb-0"><strong>Note:</strong> Limited period offers available for early investors. Special family discounts for multiple plot bookings. Bank loan assistance provided for all approved applicants. EMI options available for selected payment plans.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        What makes Rainbow County different from other projects?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Rainbow County is the first-of-its-kind color-themed residential project with seven distinct color zones, each featuring corresponding flowering plants and landscapes. This unique concept creates a vibrant living experience that changes with seasons while providing a serene and uplifting atmosphere for residents.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Is Rainbow County RERA approved?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, Rainbow County is fully RERA and HMDA approved with all necessary government clearances. All plots come with proper approvals and clear titles, ensuring complete legal security for investors and homeowners.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        What amenities will be provided in Rainbow County?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The project includes a color-themed clubhouse, swimming pool, central rainbow park, jogging and cycling tracks, children's play areas, meditation and yoga zones, 24/7 security with CCTV, underground electrification, water supply system, rainwater harvesting, solar street lighting, and landscaped gardens among other premium amenities.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        What is the timeline for possession?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Phase 1 possession is expected within 18 months from the launch date. We provide regular updates on construction progress to all our customers through our customer portal and direct communication.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Can I choose my preferred color zone?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, during the pre-booking process, you can select your preferred color zone based on availability. Each zone has a limited number of plots to maintain the thematic integrity and ensure a balanced community.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Section -->
+                    <div id="gallery" class="mb-5">
+                        <h2 class="mb-4 section-title">Project Concept & Gallery</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="gallery-item">
+                                    <img src="img/rainbow-county-1.jpg" class="img-fluid" alt="Rainbow County Entrance Concept">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="gallery-item">
+                                    <img src="img/rainbow-county-2.jpg" class="img-fluid" alt="Rainbow County Color Zones">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rainbow-county-3.jpg" class="img-fluid" alt="Rainbow County Park">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rainbow-county-4.jpg" class="img-fluid" alt="Rainbow County Clubhouse">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="gallery-item">
+                                    <img src="img/rainbow-county-5.jpg" class="img-fluid" alt="Rainbow County Landscape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Map -->
+                    <div class="mb-5">
+                        <h2 class="mb-4 section-title">Location Map</h2>
+                        <div class="location-map">
+                            <div class="text-center p-4">
+                                <i class="fa fa-map-marker-alt text-primary fa-3x mb-3"></i>
+                                <h4>Rainbow County Location</h4>
+                                <p class="mb-3">Srisailam Highway, Hyderabad</p>
+                                <a href="#" class="btn btn-rainbow mt-2">View on Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sticky-sidebar">
+                        <!-- Enquiry Form -->
+                        <div class="bg-light rounded p-5 mb-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Pre-Book Rainbow County</h4>
+                            <form id="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-control form-control-lg">
+                                            <option value="">Interested Plot Size</option>
+                                            <option value="200">200 sq.yd</option>
+                                            <option value="300">300 sq.yd</option>
+                                            <option value="400">400 sq.yd</option>
+                                            <option value="500">500 sq.yd</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-control form-control-lg">
+                                            <option value="">Preferred Color Zone</option>
+                                            <option value="red">Red Rose Zone</option>
+                                            <option value="orange">Orange Blossom Zone</option>
+                                            <option value="yellow">Yellow Sunshine Zone</option>
+                                            <option value="green">Green Harmony Zone</option>
+                                            <option value="blue">Blue Sky Zone</option>
+                                            <option value="indigo">Indigo Twilight Zone</option>
+                                            <option value="violet">Violet Dream Zone</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-rainbow w-100 py-3 fs-5" type="submit">Pre-Book Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Project Highlights -->
+                        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Project Highlights</h4>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-palette text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Color-Themed Living</h6>
+                                    <p class="mb-0">Seven distinct color zones with themed gardens</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-home text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">RERA Approved</h6>
+                                    <p class="mb-0">Government approved for complete security</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-leaf text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Eco-Friendly</h6>
+                                    <p class="mb-0">Sustainable development with green practices</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-users text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Family Community</h6>
+                                    <p class="mb-0">Designed for families with multiple amenities</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="bg-primary rounded p-5 mt-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="text-white mb-4 text-center">Contact for Pre-Booking</h4>
+                            <p class="text-white mb-4 text-center">Get in touch with our sales team for detailed information and pre-booking advantages</p>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Call Us</h5>
+                                    <p class="mb-0">+91 7989398156</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Email Us</h5>
+                                    <p class="mb-0">info@realstone.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center text-white">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                    <i class="fa fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white mb-0">Visit Office</h5>
+                                    <p class="mb-0">366, KPHB Phase1, Hyderabad</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download Brochure -->
+                        <div class="bg-light rounded p-5 mt-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4 text-center">Download Brochure</h4>
+                            <p class="mb-4 text-center">Get detailed project information, color zone details, and pricing in our comprehensive brochure.</p>
+                            <a href="#" class="btn btn-rainbow w-100 py-3">
+                                <i class="fa fa-download me-2"></i> Download Brochure
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold text-primary text-uppercase">Other Projects</h5>
+                    <h1 class="mb-0">You Might Also Like</h1>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/sp.png" alt="Signature Park">
+                            <div class="project-badge">
+                                <span class="badge bg-warning">Upcoming</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">Signature Park</h4>
+                            <p class="text-muted">POLLUTION-FREE HEAVEN @ VIJAYAWADA</p>
+                            <a class="btn btn-primary py-2 px-4" href="signature-park.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/rs.png" alt="RRR Riverside">
+                            <div class="project-badge">
+                                <span class="badge bg-warning">Upcoming</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">RRR Riverside</h4>
+                            <p class="text-muted">FARM LANDS @ MUMBAI HIGHWAY</p>
+                            <a class="btn btn-primary py-2 px-4" href="rrr-riverside.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="project-item bg-white rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/gh.png" alt="Green Heights">
+                            <div class="project-badge">
+                                <span class="badge bg-primary">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">Green Heights</h4>
+                            <p class="text-muted">DTCP VILLA PLOTS @ SADASHIVPET</p>
+                            <a class="btn btn-primary py-2 px-4" href="green-heights.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-building me-2"></i>RealStone</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Yugandhar RealStone - Your trusted partner for premium real estate investments. Building dreams with trust and transparency since 2005.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">366, KPHB Phase1, Hyderabad, Telangana 500072</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@realstone.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+91 7989398156</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="projects.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Projects</a>
+                                <a class="text-light mb-2" href="projects.html#upcoming"><i class="bi bi-arrow-right text-primary me-2"></i>Upcoming Projects</a>
+                                <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Our Projects</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="green-heights.html"><i class="bi bi-arrow-right text-primary me-2"></i>Green Heights</a>
+                                <a class="text-light mb-2" href="royal-heights.html"><i class="bi bi-arrow-right text-primary me-2"></i>Royal Heights</a>
+                                <a class="text-light mb-2" href="rrr-riverside.html"><i class="bi bi-arrow-right text-primary me-2"></i>RRR Riverside</a>
+                                <a class="text-light mb-2" href="rrr-frontside.html"><i class="bi bi-arrow-right text-primary me-2"></i>RRR Frontside</a>
+                                <a class="text-light mb-2" href="rainbow-county.html"><i class="bi bi-arrow-right text-primary me-2"></i>Rainbow County</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Yugandhar RealStone</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+  <!-- WhatsApp Contact Button with Tooltip -->
+    <a href="https://wa.me/917989398156" class="btn btn-lg btn-success btn-lg-square rounded whatsapp-contact pulse" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Custom Script for Rainbow County Page -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Sticky sidebar functionality
+        window.addEventListener('scroll', function() {
+            const sidebar = document.querySelector('.sticky-sidebar');
+            const footer = document.querySelector('footer');
+            if (sidebar && footer) {
+                const sidebarRect = sidebar.getBoundingClientRect();
+                const footerRect = footer.getBoundingClientRect();
+                
+                if (footerRect.top < window.innerHeight + sidebarRect.height) {
+                    sidebar.style.position = 'absolute';
+                    sidebar.style.top = 'auto';
+                    sidebar.style.bottom = '0';
+                } else if (window.pageYOffset > 300) {
+                    sidebar.style.position = 'fixed';
+                    sidebar.style.top = '100px';
+                    sidebar.style.bottom = 'auto';
+                } else {
+                    sidebar.style.position = 'static';
+                }
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your enquiry! We will contact you shortly.');
+            this.reset();
+        });
+
+        // Initialize animations
+        new WOW().init();
+    </script>
+</body>
+
+</html>
