@@ -124,3 +124,57 @@
     
 })(jQuery);
 
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const submitBtn = document.getElementById('sendMessage');
+            const feedbackDiv = document.getElementById('formFeedback');
+
+            // Show loading state
+            submitBtn.classList.add('btn-loading');
+            submitBtn.disabled = true;
+
+            // Hide any previous feedback
+            feedbackDiv.style.display = 'none';
+            feedbackDiv.className = 'form-feedback';
+
+            // Prepare form data
+            const formData = new FormData(form);
+
+            // Send to Formspree
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success
+                    feedbackDiv.textContent = 'Thank you! Your message has been sent successfully. We will get back to you soon.';
+                    feedbackDiv.classList.add('form-success');
+                    feedbackDiv.style.display = 'block';
+                    form.reset();
+                } else {
+                    // Error
+                    feedbackDiv.textContent = 'Sorry, there was an error sending your message. Please try again later or contact us directly.';
+                    feedbackDiv.classList.add('form-error');
+                    feedbackDiv.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                // Network error
+                feedbackDiv.textContent = 'Network error. Please check your connection and try again.';
+                feedbackDiv.classList.add('form-error');
+                feedbackDiv.style.display = 'block';
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.classList.remove('btn-loading');
+                submitBtn.disabled = false;
+            });
+        });
+
