@@ -273,7 +273,6 @@
             font-weight: 500;
         }
         .event-highlights li:before {
-
             position: absolute;
             left: 0;
             color: #b8860b;
@@ -315,6 +314,70 @@
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
+        }
+
+        /* New Styles for Price Display */
+        .price-display {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            color: white;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.2);
+        }
+        .price-display h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #ffcccc;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .price-per-unit {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .discount-badge {
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* YouTube Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 30px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-section h2 {
+            color: #b8860b;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -393,22 +456,26 @@
 
     <!-- Project Hero Section -->
     <div class="container-fluid project-hero">
-        <!-- Event Banner -->
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <h1 class="display-4 text-white mb-3 animated slideInDown">Green Heights</h1>
                     <p class="text-white fs-5 mb-4 animated slideInDown">DTCP APPROVED VILLA PLOTS @AROOR</p>
-                    <div class="me-4 d-flex text-white mb-4">
-                        <div class="me-4">
+                    <div class="me-4 d-flex text-white mb-4 flex-wrap">
+                        <div class="me-4 mb-2">
                             <i class="fa fa-map-marker-alt me-2"></i> Aroor, Sadashivpet, Hyderabad
                         </div>
-                        <div class="me-4">
+                        <div class="me-4 mb-2">
                             <i class="fa fa-home me-2"></i> Villa Plots
                         </div>
-                        <div>
+                        <div class="me-4 mb-2">
                             <i class="fa fa-tag me-2"></i> Starting at ₹ 20 Lakhs
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-rupee-sign me-2"></i>
+                            <span style="text-decoration: line-through; margin-right: 5px;">₹13,500</span>
+                            <span class="fw-bold">₹11,900 per Sq.Yd</span>
                         </div>
                     </div>
                     <a href="#contact-form" class="btn btn-primary py-3 px-5 me-3 animated slideInLeft">Enquire Now</a>
@@ -427,9 +494,7 @@
         <div class="row mb-5">
             <div class="col-12">
                 <div class="event-invitation">
-                    <div class="event-date">📅 08th February 2026<div class="launch-event-banner">
-                        🎊 Launch Event: 08 Feb 2026
-                    </div></div>
+                    <div class="event-date">📅 Launch Event :: 08th February 2026</div>
                     <h2 class="event-title">🎉 YOU ARE CORDIALLY INVITED 🎉</h2>
                     <p class="lead mb-4" style="font-weight: 600; color: #555;">
                         We are delighted to invite you to our exclusive project launch event for Green Heights. Join us for a special day of exploration and celebration.
@@ -442,7 +507,7 @@
                         <li>🎯 Special launch day pricing & exclusive offers</li>
                         <li>🤝 Meet our team for personalized consultation</li>
                         <li>✨ Since it is New venture best time to grab NorthEast Corner Plot</li>
-                        <li>🪙🪙2Grams Gold  bookings between 28th Jan to 15th Feb 2026
+                        <li>🪙🪙2Grams Gold for bookings between 28th Jan to 15th Feb 2026
                             || Extra 2 Grams Gold if registered on or before Feb 28th 2026🪙🪙</li>
                     </ul>
 
@@ -455,6 +520,21 @@
             </div>
         </div>
 
+        <!-- Special Price Offer Section -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="price-display text-center">
+                    <h3><i class="fa fa-bolt me-2"></i> SPECIAL LAUNCH PRICE OFFER</h3>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="original-price">₹13,500 per Sq.Yd</div>
+                        <div class="current-price">₹11,900 per Sq.Yd</div>
+                        <div class="discount-badge">SAVE ₹1,600 per Sq.Yd</div>
+                    </div>
+                    <p class="mt-3 mb-0">Limited time offer valid until 28th February 2026 | Book now and get additional gold coin benefits!</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row g-5">
             <div class="col-lg-8">
                 <!-- Overview Section -->
@@ -463,6 +543,20 @@
                     <p class="mb-4">Green Heights is an exclusive DTCP approved villa plot project located in the rapidly developing Sadashivpet municipal layout. This premium residential development offers the perfect blend of natural serenity and urban convenience.</p>
                     <p class="mb-4">Enjoy features like bank loans, spot registration, and all necessary approvals to build your dream home on a land close to nature. In the modern world, you don't need to live in the city to savor urban comforts.</p>
                     <p class="mb-0">Our carefully planned layout ensures optimal space utilization while preserving the natural beauty of the surroundings. With wide roads, proper drainage systems, and planned green spaces, Green Heights offers a premium living experience.</p>
+                </div>
+
+                <!-- YouTube Video Section -->
+                <div class="video-section mb-5">
+                    <h2><i class="fab fa-youtube me-2 text-danger"></i> Project Video Tour</h2>
+                    <p class="mb-4">Take a virtual tour of our Green Heights project to experience the premium location, layout, and amenities we offer.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/N9cXizUH5cQ"
+                                title="Green Heights Project Video Tour - DTCP Approved Villa Plots Hyderabad"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
 
                 <!-- Key Features -->
@@ -569,6 +663,14 @@
                                 <td>165 sq.yd, 180 sq.yd, 200 sq.yd, 300 sq.yd, 400 sq.yd, 500 sq.yd</td>
                             </tr>
                             <tr>
+                                <td><strong>Price per Sq.Yd</strong></td>
+                                <td>
+                                    <span style="text-decoration: line-through; color: #dc3545; margin-right: 10px;">₹13,500</span>
+                                    <span class="fw-bold text-success">₹11,900</span>
+                                    <span class="badge bg-danger ms-2">Special Launch Price</span>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td><strong>Price Range</strong></td>
                                 <td>₹ 20 Lakhs - ₹ 60 Lakhs</td>
                             </tr>
@@ -664,7 +766,6 @@
 
             <!-- Sidebar -->
             <div class="col-lg-4">
-                <!-- Enquiry Form -->
                 <!-- Enquiry Form -->
                 <div class="bg-light rounded p-5 mb-5 wow slideInUp" data-wow-delay="0.1s">
                     <h4 class="mb-4">Enquire About This Project</h4>
@@ -773,6 +874,7 @@
                             }
 
                             whatsappMessage += `\n---\n`;
+                            whatsappMessage += `*Special Price:* ₹11,900 per Sq.Yd (Discounted from ₹13,500)\n`;
                             whatsappMessage += `*Source:* Green Heights Project Page\n`;
                             whatsappMessage += `*Timestamp:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}\n`;
                             whatsappMessage += `*Reference:* Launch Event 08 Feb 2026`;
@@ -828,8 +930,8 @@
                             <i class="fa fa-tag text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h6 class="mb-1">Best Price</h6>
-                            <p class="mb-0">Competitive pricing with flexible payment plans</p>
+                            <h6 class="mb-1">Special Launch Price</h6>
+                            <p class="mb-0">₹11,900/sq.yd (Discounted from ₹13,500)</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
