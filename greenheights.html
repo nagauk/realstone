@@ -364,7 +364,7 @@
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin: 30px 0;
+            margin: 20px 0;
         }
         .video-container iframe {
             position: absolute;
@@ -378,6 +378,44 @@
             color: #b8860b;
             font-weight: 700;
             margin-bottom: 20px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        .video-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .video-card h4 {
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .video-card h4 i {
+            margin-right: 10px;
+            color: #ff0000;
+        }
+        .shorts-badge {
+            background: linear-gradient(135deg, #FF0050 0%, #FF4500 100%);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -457,6 +495,7 @@
     <!-- Project Hero Section -->
     <div class="container-fluid project-hero">
 
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -521,7 +560,7 @@
         </div>
 
         <!-- Special Price Offer Section -->
-        <div class="row mb-3">
+        <div class="row mb-5">
             <div class="col-12">
                 <div class="price-display text-center">
                     <h3><i class="fa fa-bolt me-2"></i> SPECIAL LAUNCH PRICE OFFER</h3>
@@ -547,15 +586,39 @@
 
                 <!-- YouTube Video Section -->
                 <div class="video-section mb-5">
-                    <h2><i class="fab fa-youtube me-2 text-danger"></i> Project Video Tour</h2>
+                    <h2><i class="fab fa-youtube me-2 text-danger"></i> Project Video Tours</h2>
                     <p class="mb-4">Take a virtual tour of our Green Heights project to experience the premium location, layout, and amenities we offer.</p>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/N9cXizUH5cQ"
-                                title="Green Heights Project Video Tour - DTCP Approved Villa Plots Hyderabad"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                        </iframe>
+
+                    <div class="video-grid">
+                        <!-- Full Video Tour -->
+                        <div class="video-card">
+                            <h4><i class="fab fa-youtube text-danger"></i> Detailed Project Video Tour</h4>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/N9cXizUH5cQ"
+                                        title="Green Heights Project Video Tour - DTCP Approved Villa Plots Hyderabad"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="mt-3 text-muted">Watch our detailed project video showcasing the layout, amenities, and location advantages.</p>
+                        </div>
+
+                        <!-- Mobile Shorts Video -->
+                        <div class="video-card">
+                            <h4><i class="fab fa-youtube text-danger"></i> Mobile Short Video
+                                <span class="shorts-badge">Shorts</span>
+                            </h4>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/1N6TFHdy3SE"
+                                        title="Green Heights Mobile Short Video - DTCP Villa Plots Hyderabad"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p class="mt-3 text-muted">Quick mobile-friendly tour of Green Heights - perfect for viewing on smartphones!</p>
+                        </div>
                     </div>
                 </div>
 
